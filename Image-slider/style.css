@@ -1,0 +1,36 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f2f2f2;
+    font-family: Arial, sans-serif;
+}
+
+.slider {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.slider img {
+    width: 600px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.buttons {
+    text-align: center;
+    margin-top: 10px;
+}
+
+button {
+    padding: 8px 15px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+
+
