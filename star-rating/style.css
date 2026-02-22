@@ -1,0 +1,28 @@
+body{
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:#f4f6f8;
+  font-family:Arial, sans-serif;
+}
+
+.card{
+  background:white;
+  padding:30px;
+  border-radius:12px;
+  text-align:center;
+  box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+.stars span{
+  font-size:40px;
+  cursor:pointer;
+  color:#ccc;
+}
+
+.stars span.active{
+  color:gold;
+}
+
+
