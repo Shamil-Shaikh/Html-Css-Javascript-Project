@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+.balance {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-section input,
+.form-section select {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #45a049;
+}
+
+.history ul {
+    list-style: none;
+    padding: 0;
+}
+
+.history li {
+    padding: 8px;
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    border-left: 5px solid;
+    background: #f9f9f9;
+}
+
+.income {
+    border-color: green;
+}
+
+.expense {
+    border-color: red;
+}
