@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Smart Planner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>📝 Smart Daily Planner</h1>
+
+    <input type="text" id="taskInput" placeholder="Enter your task...">
+    
+    <select id="moodSelect">
+      <option value="😊">Happy</option>
+      <option value="😐">Neutral</option>
+      <option value="😢">Sad</option>
+      <option value="😡">Angry</option>
+    </select>
+
+    <button onclick="addTask()">Add Task</button>
+
+    <ul id="taskList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
