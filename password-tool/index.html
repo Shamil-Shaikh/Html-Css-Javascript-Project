@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Password Tool</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>Password Checker</h1>
+
+  <input type="text" id="password" placeholder="Enter password..." oninput="checkStrength()">
+
+  <p id="strength"></p>
+
+  <button onclick="generatePassword()">Generate Password</button>
+  <button onclick="copyPassword()">Copy</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
