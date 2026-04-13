@@ -1,0 +1,16 @@
+body {
+  text-align: center;
+  font-family: Arial;
+  background: #0f172a;
+  color: white;
+}
+
+.moods span {
+  font-size: 40px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
