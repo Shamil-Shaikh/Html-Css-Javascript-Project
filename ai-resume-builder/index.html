@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AI Resume Builder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <div class="form-section">
+    <h2>Resume Builder</h2>
+
+    <input type="text" id="name" placeholder="Your Name">
+
+    <textarea id="skills" placeholder="Skills"></textarea>
+
+    <textarea id="education" placeholder="Education"></textarea>
+
+    <button onclick="generateResume()">Generate Resume</button>
+  </div>
+
+  <div class="resume-section" id="resume">
+    <h1 id="rName">Your Name</h1>
+
+    <h3>Skills</h3>
+    <p id="rSkills"></p>
+
+    <h3>Education</h3>
+    <p id="rEducation"></p>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

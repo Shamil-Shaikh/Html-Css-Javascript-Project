@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #0f172a;
+  color: white;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+}
+
+.form-section,
+.resume-section {
+  width: 40%;
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+input,
+textarea {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+button {
+  padding: 10px;
+  cursor: pointer;
+}
