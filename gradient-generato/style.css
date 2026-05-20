@@ -1,0 +1,41 @@
+body{
+  margin:0;
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:#0f172a;
+  font-family:Arial;
+  color:white;
+}
+
+.container{
+  text-align:center;
+}
+
+.box{
+  width:350px;
+  height:200px;
+  border-radius:15px;
+  margin:20px auto;
+  box-shadow:0 10px 20px rgba(0,0,0,0.4);
+}
+
+button{
+  padding:12px 20px;
+  margin:10px;
+  border:none;
+  border-radius:8px;
+  background:#38bdf8;
+  color:white;
+  cursor:pointer;
+}
+
+button:hover{
+  opacity:0.9;
+}
+
+#code{
+  margin:15px 0;
+  font-size:18px;
+}
