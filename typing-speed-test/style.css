@@ -1,0 +1,45 @@
+body{
+  margin:0;
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:#0f172a;
+  font-family:Arial;
+  color:white;
+}
+
+.container{
+  width:600px;
+  background:#1e293b;
+  padding:30px;
+  border-radius:15px;
+}
+
+h1{
+  text-align:center;
+}
+
+#text{
+  background:#334155;
+  padding:15px;
+  border-radius:10px;
+  line-height:1.6;
+}
+
+textarea{
+  width:100%;
+  height:120px;
+  margin-top:20px;
+  padding:15px;
+  border:none;
+  border-radius:10px;
+  resize:none;
+  font-size:16px;
+}
+
+.stats{
+  display:flex;
+  justify-content:space-between;
+  margin-top:20px;
+}
