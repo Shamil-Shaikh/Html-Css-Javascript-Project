@@ -1,16 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Color Palette Generator</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Color Palette Generator</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h1>Color Palette Generator 🎨</h1>
+<div class="container">
+  <h1>🎨 Color Palette Generator</h1>
 
-<div class="palette" id="palette"></div>
+  <button onclick="generatePalette()">
+    Generate Palette
+  </button>
 
-<button onclick="generatePalette()">Generate</button>
+  <div id="palette"></div>
+</div>
 
 <script src="script.js"></script>
 </body>

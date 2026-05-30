@@ -1,33 +1,59 @@
-function randomColor() {
-  let letters = "0123456789ABCDEF";
+const palette =
+  document.getElementById("palette");
+
+function randomColor(){
+
+  const letters =
+    "0123456789ABCDEF";
+
   let color = "#";
 
-  for (let i = 0; i < 6; i++) {
-    color += letters[Math.floor(Math.random() * 16)];
+  for(let i=0;i<6;i++){
+
+    color +=
+      letters[
+        Math.floor(Math.random()*16)
+      ];
   }
 
   return color;
 }
 
-function generatePalette() {
-  let palette = document.getElementById("palette");
+function generatePalette(){
+
   palette.innerHTML = "";
 
-  for (let i = 0; i < 5; i++) {
-    let color = randomColor();
+  for(let i=0;i<5;i++){
 
-    let div = document.createElement("div");
-    div.className = "color";
-    div.style.background = color;
+    let color =
+      randomColor();
 
-    div.innerHTML = `<span>${color}</span>`;
+    let box =
+      document.createElement("div");
 
-    div.onclick = () => {
-      navigator.clipboard.writeText(color);
-      alert("Copied " + color);
-    };
+    box.className =
+      "color-box";
 
-    palette.appendChild(div);
+    box.style.background =
+      color;
+
+    box.innerHTML =
+      `<span>${color}</span>`;
+
+    box.addEventListener(
+      "click",
+      () => {
+
+        navigator.clipboard
+          .writeText(color);
+
+        alert(
+          `${color} copied!`
+        );
+      }
+    );
+
+    palette.appendChild(box);
   }
 }
 
