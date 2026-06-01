@@ -1,0 +1,27 @@
+body{
+  margin:0;
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-family:Arial;
+  transition:0.4s;
+}
+
+.container{
+  text-align:center;
+}
+
+h1{
+  margin-bottom:20px;
+}
+
+.emojis span{
+  font-size:60px;
+  margin:10px;
+  cursor:pointer;
+}
+
+#message{
+  margin-top:20px;
+}
