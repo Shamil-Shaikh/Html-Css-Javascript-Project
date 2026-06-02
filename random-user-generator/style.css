@@ -1,0 +1,33 @@
+body{
+  margin:0;
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:#0f172a;
+  font-family:Arial;
+}
+
+.card{
+  background:white;
+  padding:30px;
+  border-radius:15px;
+  text-align:center;
+  width:320px;
+}
+
+img{
+  width:120px;
+  height:120px;
+  border-radius:50%;
+}
+
+button{
+  margin-top:15px;
+  padding:10px 20px;
+  border:none;
+  background:#2563eb;
+  color:white;
+  border-radius:8px;
+  cursor:pointer;
+}
