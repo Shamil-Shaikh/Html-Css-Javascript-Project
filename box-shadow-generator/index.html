@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Box Shadow Generator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+<h1>Box Shadow Generator 🎨</h1>
+
+<div class="box" id="box"></div>
+
+<label>Horizontal</label>
+<input type="range" id="x" min="-50" max="50" value="10">
+
+<label>Vertical</label>
+<input type="range" id="y" min="-50" max="50" value="10">
+
+<label>Blur</label>
+<input type="range" id="blur" min="0" max="100" value="20">
+
+<p id="cssCode"></p>
+
+<button onclick="copyCode()">
+Copy CSS
+</button>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
