@@ -1,0 +1,47 @@
+body{
+  margin:0;
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:#0f172a;
+  font-family:Arial;
+}
+
+.card{
+  background:white;
+  width:320px;
+  padding:25px;
+  border-radius:15px;
+  text-align:center;
+}
+
+img{
+  width:120px;
+  height:120px;
+  border-radius:50%;
+}
+
+.skills{
+  margin:15px 0;
+}
+
+.skills span{
+  background:#2563eb;
+  color:white;
+  padding:5px 10px;
+  border-radius:20px;
+  margin:3px;
+  display:inline-block;
+}
+
+.links a{
+  text-decoration:none;
+  color:white;
+  background:#111827;
+  padding:10px 15px;
+  border-radius:8px;
+  margin:5px;
+  display:inline-block;
+}
+
