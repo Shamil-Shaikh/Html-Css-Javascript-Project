@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mood App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>How are you feeling today?</h1>
+
+    <div class="buttons">
+      <button onclick="setMood('happy')">😄 Happy</button>
+      <button onclick="setMood('sad')">😔 Sad</button>
+      <button onclick="setMood('angry')">😡 Angry</button>
+      <button onclick="setMood('relax')">😌 Relax</button>
+    </div>
+
+    <h2 id="quote">Select your mood...</h2>
+  </div>
+
+  <audio id="music" loop></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
