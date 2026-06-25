@@ -1,0 +1,45 @@
+body {
+  font-family: Arial;
+  background: #111827;
+  color: white;
+  text-align: center;
+}
+
+.container {
+  margin-top: 100px;
+}
+
+input {
+  padding: 10px;
+  margin: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Notification */
+#notificationBox {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
+.notification {
+  background: #1e293b;
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 8px;
+  min-width: 200px;
+  animation: slideIn 0.5s ease;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
