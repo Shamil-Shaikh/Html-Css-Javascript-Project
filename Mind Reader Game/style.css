@@ -1,0 +1,20 @@
+body {
+  background: #0f172a;
+  color: white;
+  text-align: center;
+  font-family: Arial;
+}
+
+#colors {
+  display: grid;
+  grid-template-columns: repeat(4, 60px);
+  gap: 10px;
+  justify-content: center;
+  margin: 20px;
+}
+
+.color {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+}
