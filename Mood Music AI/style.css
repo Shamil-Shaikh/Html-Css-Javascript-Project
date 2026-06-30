@@ -1,0 +1,16 @@
+body {
+  background: #020617;
+  color: white;
+  text-align: center;
+  font-family: Arial;
+}
+
+input {
+  padding: 10px;
+  margin: 10px;
+}
+
+li {
+  list-style: none;
+  margin: 5px;
+}
