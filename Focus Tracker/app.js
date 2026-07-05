@@ -1,36 +1,35 @@
+let time = 0;
+let distractions = 0;
+let interval;
 
-const video = document.getElementById("video");
-const statusText = document.getElementById("status");
-const timeDisplay = document.getElementById("time");
+function startFocus() {
+  time = 0;
+  distractions = 0;
 
-let focusTime = 0;
-let focused = false;
+  document.getElementById("time").innerText = 0;
+  document.getElementById("distractions").innerText = 0;
+  document.getElementById("score").innerText = 100;
 
-// Camera start
-navigator.mediaDevices.getUserMedia({ video: true })
-  .then(stream => {
-    video.srcObject = stream;
-  });
+  clearInterval(interval);
 
-// Fake face detection logic 😏 (brightness change trick)
-setInterval(() => {
-  const random = Math.random();
+  interval = setInterval(() => {
+    time++;
+    document.getElementById("time").innerText = time;
+    updateScore();
+  }, 1000);
+}
 
-  if (random > 0.3) {
-    focused = true;
-    statusText.innerText = "✅ Focused";
-    statusText.style.color = "lightgreen";
-  } else {
-    focused = false;
-    statusText.innerText = "⚠️ Not Focused";
-    statusText.style.color = "red";
+// Detect tab switch
+document.addEventListener("visibilitychange", () => {
+  if (document.hidden) {
+    distractions++;
+    document.getElementById("distractions").innerText = distractions;
+    updateScore();
   }
-}, 2000);
+});
 
-// Timer
-setInterval(() => {
-  if (focused) {
-    focusTime++;
-    timeDisplay.innerText = focusTime;
-  }
-}, 1000);
+// Score calculation
+function updateScore() {
+  let score = Math.max(100 - distractions * 10, 0);
+  document.getElementById("score").innerText = score;
+}
