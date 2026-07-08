@@ -1,0 +1,23 @@
+body {
+  background: #0f172a;
+  color: white;
+  text-align: center;
+  font-family: Arial;
+}
+
+#area {
+  width: 90%;
+  height: 400px;
+  margin: 20px auto;
+  background: #1e293b;
+  position: relative;
+}
+
+.dot {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: red;
+  border-radius: 50%;
+  opacity: 0.4;
+}
