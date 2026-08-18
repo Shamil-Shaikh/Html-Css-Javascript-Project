@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Memory Vault</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>🧠 Digital Memory Vault</h1>
+    <p>Record your clicks and replay the entire sequence.</p>
+  </header>
+
+  <section class="controls">
+    <button id="recordBtn">🔴 Start Recording</button>
+    <button id="replayBtn">▶️ Replay</button>
+    <button id="clearBtn">🗑️ Clear</button>
+  </section>
+
+  <div class="stats">
+    <span>Actions: <b id="count">0</b></span>
+    <span>Status: <b id="status">Ready</b></span>
+  </div>
+
+  <main id="vault">
+    <div class="hint">
+      Click anywhere inside this vault while recording...
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
