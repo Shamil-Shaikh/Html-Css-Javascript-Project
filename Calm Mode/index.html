@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MoodSpace</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="app">
+
+    <h1>🌌 MoodSpace</h1>
+    <p class="subtitle">Choose your mood and change your digital atmosphere.</p>
+
+    <div class="moods">
+      <button onclick="changeMood('calm')">🌊 Calm</button>
+      <button onclick="changeMood('energy')">⚡ Energy</button>
+      <button onclick="changeMood('focus')">🎯 Focus</button>
+      <button onclick="changeMood('night')">🌙 Night</button>
+    </div>
+
+    <div class="card">
+      <div id="emoji">🌊</div>
+      <h2 id="title">Calm Mode</h2>
+      <p id="message">
+        Take a breath. Slow down and enjoy the moment.
+      </p>
+
+      <div class="meter">
+        <div id="bar"></div>
+      </div>
+
+      <p>Atmosphere: <span id="level">60%</span></p>
+    </div>
+
+    <div id="particles"></div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
