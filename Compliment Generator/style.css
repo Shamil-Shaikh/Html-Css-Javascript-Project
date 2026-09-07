@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial;
+  background: #111827;
+  color: white;
+}
+
+.box {
+  width: 350px;
+  padding: 40px;
+  text-align: center;
+  background: #1f2937;
+  border-radius: 20px;
+}
+
+h1 {
+  margin-bottom: 30px;
+}
+
+#compliment {
+  min-height: 50px;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+button {
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
