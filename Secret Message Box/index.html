@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Secret Message Box</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="card">
+      <h1>🔐 Secret Message</h1>
+      <p class="subtitle">Encode your message into a secret text</p>
+
+      <textarea id="message" placeholder="Write your message here..."></textarea>
+
+      <div class="buttons">
+        <button onclick="encodeMessage()">🔒 Encode</button>
+        <button onclick="decodeMessage()">🔓 Decode</button>
+        <button onclick="copyText()">📋 Copy</button>
+        <button onclick="clearBox()">🧹 Clear</button>
+      </div>
+
+      <div class="result">
+        <h3>Result</h3>
+        <p id="result">Your result will appear here...</p>
+      </div>
+
+      <span id="status"></span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
