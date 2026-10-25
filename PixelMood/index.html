@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PixelMood | Color Palette</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <h1>🎨 PixelMood</h1>
+    <p>Find colors that work beautifully together.</p>
+
+    <div class="picker">
+      <label for="baseColor">Choose your base color</label>
+      <input type="color" id="baseColor" value="#6c63ff">
+      <button id="generateBtn">Generate Palette ✨</button>
+    </div>
+
+    <div id="palette" class="palette"></div>
+    <p id="status">Click any color to copy its HEX code.</p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
